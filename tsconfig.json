@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "rootDir": "src",
+        "outDir": "dist/js",
+        "noEmitOnError": true,
+        "typeRoots": [
+            "node_modules/@types",
+        ],
+    },
+    "include": [
+        "node_modules/chrome-extension-async/chrome-extension-async.d.ts"
+    ]
+}

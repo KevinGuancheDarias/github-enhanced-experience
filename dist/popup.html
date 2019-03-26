@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started Extension's Popup</title>
+  <style>
+    html {
+      background: linear-gradient(270deg, #0092e4, #07006b, #3884ce, #1a3f0c);
+      background-size: 800% 800%;
+      -webkit-animation: FreakAnimation 10s ease infinite;
+      animation: FreakAnimation 10s ease infinite;
+    }
+
+    html,
+    body {
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 100%;
+      min-width: 300px;
+    }
+
+    @-webkit-keyframes FreakAnimation {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes FreakAnimation {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    .logo-img-container {
+      background: linear-gradient(#7777aa, #aaaaff);
+      border-radius: 50%;
+      width: 220px;
+      height: 200px;
+      margin: 0 auto;
+      box-shadow: inset gold 0px 0px 15px, black 0px 0px 5px, blueviolet 0px 0px 15px;
+      border: solid 3px darkblue;
+    }
+
+    .logo-img-container img {
+      width: 100%;
+    }
+
+    .text-container {
+      margin: 0 auto;
+      text-align: center;
+      padding: 5px;
+      background: rgba(240, 235, 230, 0.8);
+      border-radius: 25px;
+      box-shadow: inset 0px 0px 3px gold, 0px 0px 5px black;
+      border: solid 2px darkblue;
+    }
+
+    .donate-table {
+      margin: 0 auto;
+    }
+
+    .patreon-link {
+      backface-visibility: hidden;
+      background-color: rgb(232, 91, 70);
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 500;
+      position: relative;
+      pointer-events: unset;
+      text-align: center;
+      text-transform: none;
+      user-select: none;
+      white-space: unset;
+      width: 100%;
+      color: rgb(255, 255, 255) !important;
+      font-size: 1rem !important;
+      border-radius: 9999px;
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    }
+  </style>
+  <script src="js/vendor.js"></script>
+</head>
+
+<body>
+  <div class="logo-img-container">
+    <img src="img/logo.popup.png" />
+  </div>
+  <div class="text-container">
+
+
+    <table class="donate-table">
+      <thead>
+        <tr>
+          <th colspan="2"> If you like this extension feel free to donate, using one of the following services</th>
+        <tr>
+          <th>Patreon</th>
+          <th>Paypal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="patreon-link" target="_blank" href="https://www.patreon.com/bePatron?u=13416760">Become a
+              Patron!</a></td>
+          <td>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="2VY3VAKESGZPQ" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0"
+                name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

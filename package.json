@@ -1,0 +1,30 @@
+{
+  "name": "github-enhanced-experience",
+  "version": "1.0.0",
+  "description": "Adds extra features to the displaying of github.com or Github Enterprise",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "private": true,
+  "author": "Kevin Guanche Darias",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+  },
+  "dependencies": {
+    "chrome-extension-async": "^3.3.2",
+    "jquery": "~3.3.1",
+    "moment": "~2.22.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "~3.3.1",
+    "ts-loader": "~5.0.0",
+    "typescript": "~3.0.3",
+    "webpack": "~4.17.2",
+    "webpack-cli": "~3.1.0",
+    "webpack-merge": "~4.1.4"
+  }
+}
